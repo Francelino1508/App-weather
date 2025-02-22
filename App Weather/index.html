@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Weather</title>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="_css/styles.css">
+
+    <!-- Javascript and Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="_js/scripts.js"></script>
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="frm-dialog">
+                <h1 class="text-title">App Weather</h1>
+                <form method="post" class="form-search" id="form-search">
+                    <input type="text" name="city" id="city" placeholder="Digite a Cidade" autofocus="on" autocomplete="off" required="true">
+                    <button type="submit" id="btn-search">
+                        <i class="fa fa-search fa-fw fa-2x"></i>
+                    </button>
+                </form>
+                <div class="result-content">
+                    <h3>Situação climática em</h3> 
+                    <figure class="flag-country">
+                        <i class="fa-solid fa-location-dot fa-2x"></i>
+                        <figcaption id="city-name">Luanda</figcaption> 
+                        <img src="https://flagcdn.com/48x36/ao.png" alt="country" id="country_img">   
+                    </figure>
+                    <figure class="temperature">
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" id="weather-icon">
+                        <figcaption>
+                            <span id="temp">0</span>
+                            <span>&deg;C</span>
+                        </figcaption>
+                    </figure>
+                    <p class="description">Sem descrição</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-cloud"></i>
+                            <span><span id="cloud">0</span>&percnt;</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-droplet"></i>
+                            <span><span id="umidity">0</span>&percnt;</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-wind"></i>
+                            <span><span id="wind">0&nbsp;km/h</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

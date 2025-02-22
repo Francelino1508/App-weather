@@ -1,0 +1,128 @@
+*{margin:0;padding:0;box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to right,dodgerblue,white);
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.frm-dialog{
+    width:500px;
+    height:500px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    background-color:#fff;
+    padding:0.5em;
+    border-radius:10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+.text-title{
+    padding:0.2em;
+    text-align: center;
+    color:dodgerblue;
+}
+.form-search{
+    width:100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid #d5d5d5;
+    border-radius:5px;
+}
+.form-search > input{
+    padding:0.4em 0.4em;
+    width:calc(100% - 40px);
+    border:0;
+    border-radius: inherit;
+    font-size:1em;
+    text-transform: capitalize;
+}
+.form-search > input{
+    border-left-style:none;
+}
+.form-search > input:focus{
+    outline: none;
+}
+.form-search > button{
+    border-radius: inherit;
+    border: 1px solid #fff;
+    background-color:transparent!important;
+    cursor: pointer;color:black;
+    display: flex;align-items: center;
+    justify-content: center;
+    padding: 0.2em 0.3em;
+    border-left-style: none;
+}
+.result-content{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.result-content > .flag-country{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    gap:10px;
+}
+.result-content > .temperature{
+    width:100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.result-content > .temperature > img{
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    filter: drop-shadow(0 0 8px rgba(0,0,0,0.5));
+}
+.result-content ul{
+    width:100%;
+    list-style: none;
+    padding:0.5em;
+    display:block;
+    border:1px solid #d5d5d5;
+    border-radius:5px;
+}
+.result-content ul li{
+    padding:0.5em;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result-content ul li i{
+    color:dodgerblue;
+    font-size:1.5em;
+}
+#loading{
+  color:#1e90ff;
+  margin:1em 0 1em 4em;
+  position:relative;
+}
+#city-name{
+    color:#1e90ff;
+    text-transform: capitalize;
+}
